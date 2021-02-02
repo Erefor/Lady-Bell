@@ -1,0 +1,437 @@
+*{padding: 0; margin: 0;}
+body{
+    font-family: 'Lato';
+    text-align: center;
+    p{font-family: 'Raleway';}
+    h1,h2{font-weight: bold;}
+    color: #C93D76;
+    .container-fluid{
+        .espacio{ height: 80px; background: rgba(255, 192, 203,0.2); width: 100%;}
+        .Header{ 
+            height: 500px;
+            max-width: 2000px;           
+            background: url(/images/portadaBigView.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                display: none;
+                margin-top: 20px;
+            }
+            
+        }
+        .SeccionSujetos{
+            max-height: 500px;
+            height: 500px;
+            width: 1000px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ContenedorSujetos{
+                height: 300px;
+                width: 100%;
+
+                display: flex;
+                .Sujeto{
+                    //border: solid 2px pink;
+                    height: 300px;
+                    width: 33%;
+                    margin: 0 10px;
+                    img{margin-top: 5px; border-radius: 50%;}
+                    i{
+                        font-size: 2em;
+                        
+                        color: #C93D76;
+                        margin: 0 5px;    
+                    }
+
+                }
+            }
+        }
+        .Seccion-Galeria{
+            height: 100%;
+            max-height: 1000px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                border-bottom: 2px solid pink;
+            }
+            
+            
+            .FilaBotones{
+                width: 100%;
+                button{
+                    outline: none;
+                    border: 2px solid pink;
+                    background: none;
+                    color: #C93D76;
+                    border-radius: 10%;
+                    width: auto;
+                    height: 40px;
+                    font-size: 1.5em;
+                    margin: 0 1em;
+                    p{padding: 0 3px; background: none;}
+                    i{font-size: 2em; background: none; }
+                    background: #c93d7562;
+                    transition: 0.4s linear;
+                    margin: 40px 15px;
+                    text-align: center;
+                }
+                button:hover{
+                    border: 2px solid white;
+                    background: palevioletred;
+                    color: white;
+                    transform: scale(1.5);
+                } 
+            }
+            
+            
+        }
+        .Videos{
+            .VideosLista{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{margin-top: 2em;}
+                a{color: #ff0000; font-size: 4em;transition: 0.3s linear;}
+                a:hover{transform: scale(2);}
+            }
+            
+            
+            
+        }
+        .carousel-control-prev,
+        .carousel-control-next{
+            font-size: 40px;
+            background: pink;
+        }
+        .Seccion-Paquetes{
+            height: auto;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ContenedorPaquetes{
+                width: 80%;
+                height: auto;
+                
+                display: flex;
+                .PaqueteBasico,
+                .PaqueteModern{
+                    width: 100%;
+                    height: auto;
+                    border: 2px solid pink;
+                    margin: 20px 30px;
+                    padding: 10px 10px;
+                }
+                .PaquetePlatinum{
+                    width: 100%;
+                    height: auto;
+                    border: 2px solid pink;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 10px 10px;
+                }
+                .Costo{
+                    text-decoration: underline;
+                    font-size: 35px;
+                }
+
+                .PaqueteBasico:hover,
+                .PaqueteModern:hover,
+                .PaquetePlatinum:hover{
+                    border: 5px solid palevioletred;
+                }
+            }
+        }
+        .Seccion-Contacto{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .ContenedorTarjetas{
+                
+                height: auto;
+                width: 80%;
+                margin: 20px 0px;
+                display: flex;
+                .Tarjeta{
+                    width: 33.33%;
+                    height: 150px;
+                    background: pink;
+                    margin: 10px 25px;
+                    border-radius: 15px;
+                    position: relative;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        font-size: 50px;
+                        transition: .3s linear;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                .Tarjeta:hover i{
+                    transform: scale(3);
+                    opacity: 0;
+                }
+                .Tarjeta h3,
+                .Tarjeta span{    
+                    font-size: 1.5em;
+                    opacity: 0;
+                    display: inline-block;
+                    a,i{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                .ContenidoTarjeta{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    
+                    
+                }
+                .Tarjeta h3{
+                    top: 25px;
+                    text-transform: uppercase;
+                }
+                .Tarjeta span{
+                    bottom: 20px;
+                    color: white;
+                    font-weight: 500;
+                }
+                .Tarjeta:hover h3{
+                    opacity: 1;
+                    top: 46px;
+                    transition: .3s linear .3s;
+                }
+                .Tarjeta:hover span{
+                    opacity: 1;
+                    bottom: 46px;
+                    transition: .3s linear .3s;
+                    
+                    padding: 20px 20px;
+                    a,i{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    
+                }
+                
+            }
+        }
+
+        .Footer{
+            max-height: 300px;
+            height: 100px;
+            background: pink;
+        }
+    }
+
+    #Youtube{
+        color: red;
+        font-size: 3em;
+    }
+}
+
+
+
+@media screen and (max-width: 1401px) {
+    
+    body{
+        //background: GREEN;
+
+        .Seccion-Contacto{
+            .ContenedorTarjetas{
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .Tarjeta{
+                    height: 300px;
+                }
+            }
+        }
+
+        .FilaSujetos{
+            .SeccionSujetos{
+                
+                width: 80%;
+            }
+        }
+        .Seccion-Paquetes{
+            flex-direction: column;
+            
+            .ContenedorPaquetes{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                flex-direction: column;
+                
+                .PaqueteBasico,
+                .PaqueteModern,
+                .PaquetePlatinum{
+                    width: 100%;
+                    display: inline-block;
+                    
+                            
+                    
+                }
+            }
+        }
+        .row{
+            .Seccion-Contacto{
+                .ContenedorTarjetas{
+                    .Tarjeta{
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 940px) {
+    /* start of large tablet styles */
+    body{
+        //background: red;
+        .SeccionSujetos{
+            width: 100%;
+        }
+
+        .Seccion-Paquetes{
+            flex-direction: column;
+            
+            .ContenedorPaquetes{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                flex-direction: column;
+                
+                .PaqueteBasico,
+                .PaqueteModern,
+                .PaquetePlatinum{
+                    width: 100%;
+                    display: inline-block;
+                    
+                            
+                    
+                }
+            }
+
+            .Seccion-Contacto{
+                .ContenedorTarjetas{
+                    .Tarjeta{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        
+            
+            
+            
+        
+        
+    }
+}
+    
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    body{
+        //background: yellow;
+        .SeccionSujetos{
+            .Sujeto{
+                img{height: 100px;width: 100px;}
+            }
+        }
+        img{width: 500px;}
+        .row{
+            .Seccion-Contacto{
+                .ContenedorTarjetas{
+                    .Tarjeta{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    body{
+        //background: purple;
+        .row{
+            .Header{ 
+                //height: 500px;
+                //max-width: 2000px;           
+                background: url(images/portadaMoviles.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+            .FilaSujetos{
+                .SeccionSujetos{
+                    height: auto;
+                    .ContenedorSujetos{
+                        
+                        width: 100%;
+                        height: auto;
+                        .Sujeto{
+                            height: 250px;
+                            p {font-size: 10px;}
+                            img{height: 70px;width: 70px;}
+                            }
+                        }
+                    }
+                }
+            
+            img{width: 400px;}
+            .row{
+                .Seccion-Galeria{
+                    .FilaBotones{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        button{
+                            width: 50%;
+                            margin: 15px;
+                            padding: 0;
+                        }
+                    }
+                }
+    
+            }
+        }
+        
+        
+    }
+
+
+
