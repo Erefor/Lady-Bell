@@ -1,0 +1,102 @@
+/* #282f5a*/
+body{
+    font-family: 'Lato', 'Spartan', sans-serif;
+}
+i{
+    margin: 0 5px;
+    font-size: 25px;
+}
+.row, col{
+    margin-bottom: 0;
+}
+.responsive-img{
+    border-color: pink;
+    padding: 50px 50px;
+    
+}
+.header{
+    background: linear-gradient(rgba(40,47,90,1),rgba(40,47,90,0.8)),url('https://scontent.fmex11-3.fna.fbcdn.net/v/t1.6435-9/48371160_499961360409673_6664915642749026304_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=973b4a&_nc_ohc=4alWvVpcsxgAX9GDM62&_nc_ht=scontent.fmex11-3.fna&oh=90ae27cd4b7e4a66732ff1d582c32101&oe=60970CB0')0% 0% / cover no-repeat;
+    background-color: #282f5a;
+    margin-bottom: 0;
+}
+.borde{
+    border: 15px solid #d73e78;
+    margin: 8% 10%;
+}
+/*===========NOSOTROS==============*/
+.nosotros{
+    background-color: #d73e78;
+    margin-bottom: 0 0 0 0;
+    padding-bottom: 0 0 0 0;
+}
+.nosotros p{
+    font-family: 'Spartan';
+    
+}
+.nosotros h2{
+    font-family: 'Lato';
+}
+.borde2{
+    border: 15px solid #282f5a;
+    margin: 6% 8%;
+    padding: 0 0 0 0;
+}
+.nosotros .responsive-img,
+.nosotros h3,
+.nosotros P{
+    padding: 0 0 0 0;
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+.nosotros .card-small {
+    background-color: white;
+    color: #282f5a;
+    margin-bottom: 10rem;
+}
+.nosotros .card-small p{
+    color: #282f5a;
+}
+.nosotros .card-small .responsive-img{
+    border: solid 15px #282f5a;
+    margin: 0 0 0 0;
+}
+.nosotros .card-small .responsive-img p{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+/*=========NUESTRO TRABAJO============*/
+.trabajo{
+    background-color: #282f5a;
+}
+#retratosCarousel{
+    display: none;
+    margin-bottom: 100px;
+    object-fit: cover;
+}
+#videoXv{
+    display: none;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+#eventosCarousel{
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+#eventosCarousel .carousel-slider img{
+    width: 750px;
+    height: 550px;
+    object-fit: cover;
+}
+.carousel-slider{
+    height: 600px;
+    object-fit: cover;
+}
+
+
+/*=============PRECIOS==================*/
+.precios{
+    background: linear-gradient(rgba(215,62,120,1),rgba(215,62,120,0.8)),url('https://scontent.fmex11-3.fna.fbcdn.net/v/t1.6435-9/48371160_499961360409673_6664915642749026304_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=973b4a&_nc_ohc=4alWvVpcsxgAX9GDM62&_nc_ht=scontent.fmex11-3.fna&oh=90ae27cd4b7e4a66732ff1d582c32101&oe=60970CB0')0% 0% / cover no-repeat;
+}
+.card-de-precios{
+    background-color: #282f5a;
+}
